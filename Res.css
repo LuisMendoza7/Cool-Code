@@ -1,0 +1,79 @@
+/*Flexbox CSS and responsive rules*/
+/*Header Section*/
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.HI {
+  margin-left: auto;
+  padding: 12px
+}
+
+.HF {
+  padding: 12px;
+}
+/*Header Section End*/
+
+/*Home Section(Used only in Index.html)*/
+body {
+  margin: 0px;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/*Home Section End*/
+
+/*Body Section*/
+.body {
+  display: flex;
+
+}
+
+.ad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Body Section*/
+
+/*Title Section*/
+.title {
+  display: flex;
+  align-items: center;
+}
+/*Title Section End*/
+
+/*Footer Section*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.f1, .f2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+}
+/*Footer Section End*/
+
+/*Responsive Section*/
+@media only screen and (max-width: 1120px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+/*Responsive Section End*/
