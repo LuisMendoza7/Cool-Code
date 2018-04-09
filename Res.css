@@ -32,7 +32,6 @@ body {
 /*Body Section*/
 .body {
   display: flex;
-
 }
 
 .ad {
@@ -41,6 +40,11 @@ body {
   align-items: center;
 }
 
+.spcurse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /*Body Section*/
 
 /*Title Section*/
