@@ -38,11 +38,73 @@ body {
 }
 
 .ad {
-  margin-top: 35px;
   color: white;
   text-shadow: 3px 2px 5px rgba(0, 0, 0, 1);
   font-family: "Merriweather Sans", sans-serif;
+  margin: auto;
+  padding-top: 35px;
 }
+
+.sometext {
+  width: 100%;
+}
+
+.scurse {
+  width: 100%;
+}
+.curses {
+  padding: 30px;
+}
+
+.cursebox {
+  background-color: #9B92D4;
+  padding: 10px;
+  text-align: justify;
+  width: 200px;
+}
+
+.cursetitle {
+  font-family: "Oxygen", sans-serif;
+  text-align: center;
+}
+
+/*Show more button settings*/
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Mostrar Contenido';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Ocultar Contenido';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: black;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+/*Show more button end*/
 /*Body Section End*/
 
 /*Title Styling*/
