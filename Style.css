@@ -45,13 +45,10 @@ body {
   padding-top: 35px;
 }
 
-.sometext {
-  width: 100%;
+.resbox {
+  padding: 30px;
 }
 
-.scurse {
-  width: 100%;
-}
 .curses {
   padding: 30px;
 }
