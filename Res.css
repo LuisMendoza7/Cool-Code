@@ -55,6 +55,10 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
+.curses > .cursebox {
+  margin:  20px;
+}
 /*Body Section*/
 
 /*Title Section*/

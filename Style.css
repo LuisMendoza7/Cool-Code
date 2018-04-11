@@ -26,7 +26,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 /*Home Section End*/
 
 /*Body Section(Used in all user pages)*/
@@ -46,7 +45,14 @@ body {
 }
 
 .resbox {
+  margin-top: 15px;
   padding: 30px;
+}
+
+.resbox p {
+  margin-top: 40px;
+  width: 70%;
+  line-height: 1.8;
 }
 
 .curses {
@@ -63,6 +69,10 @@ body {
 .cursetitle {
   font-family: "Oxygen", sans-serif;
   text-align: center;
+}
+
+#resimg {
+  width: 30em;
 }
 
 /*Show more button settings*/
@@ -152,7 +162,7 @@ body {
 footer {
   background-color: #C1D6E0;
   margin-left: auto;
-  width: 35%;
+  width: 19.5em;
   margin-right: auto;
   font-family: "Nunito", sans-serif;
 }
@@ -177,7 +187,7 @@ a {
 /*Tags Section End*/
 
 /*Responsive Section*/
-@media only screen and (max-width:1120px){
+@media only screen and (max-width:1024px){
   .log {
     margin: 0px;
     margin-bottom: 3rem;
@@ -193,11 +203,36 @@ a {
   .title {
     width: 65%;
   }
+
+  .ad {
+    width: 70%;
+    text-align: center;
+    padding-top: 25px;
+  }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 720px) {
   .title {
     width: 75%;
+  }
+
+  .ad {
+    width: 80%;
+  }
+
+  #resimg {
+    width: 25em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .ad {
+    font-size: 1.7em;
+    width: 95%;
+  }
+
+  .cursebox {
+    margin-bottom: 2em;
   }
 }
 /*Responsive Section End*/
