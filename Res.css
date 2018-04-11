@@ -1,18 +1,11 @@
 /*Flexbox CSS and responsive rules*/
 /*Header Section*/
+
 .header {
   display: flex;
   width: 100%;
   align-items: center;
-}
-
-.HI {
-  margin-left: auto;
-  padding: 12px
-}
-
-.HF {
-  padding: 12px;
+  justify-content: flex-start;
 }
 /*Header Section End*/
 
@@ -92,6 +85,12 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .headeritems > .HI {
+    line-height: 3;
   }
 }
 /*Responsive Section End*/
