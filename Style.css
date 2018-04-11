@@ -11,8 +11,16 @@
   font-family: "Nunito", sans-serif;
 }
 
-.HI:hover, .HF:hover {
+.HI {
+  padding: 12px
+}
+
+.HI:hover {
   background-color: #B3B3FF;
+}
+
+.headeritems {
+  margin-left: auto;
 }
 /*Header Section End*/
 
@@ -72,7 +80,7 @@ body {
 }
 
 #resimg {
-  width: 30em;
+  width: 500px;
 }
 
 /*Show more button settings*/
@@ -221,7 +229,17 @@ a {
   }
 
   #resimg {
-    width: 25em;
+    width: 400px;
+  }
+
+  .resbox p {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .headeritems > .HI {
+    line-height: 3;
   }
 }
 
@@ -233,6 +251,14 @@ a {
 
   .cursebox {
     margin-bottom: 2em;
+  }
+
+  #resimg {
+    width: 80%;
+  }
+
+  .resbox p {
+    width: 80%;
   }
 }
 /*Responsive Section End*/
