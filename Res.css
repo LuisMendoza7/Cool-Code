@@ -52,6 +52,43 @@ body {
 .curses > .cursebox {
   margin:  20px;
 }
+
+.usermain {
+  display: flex;
+  flex-direction: row;
+  margin: 3% 6% 3% 6%;
+  border: 3px double gray;
+  padding: 20px 0 20px 0;
+}
+
+.usermain1 {
+  padding: 0 20px 0 20px;
+}
+
+.usermod {
+  display: flex;
+  flex-direction: column;
+}
+
+.usermod > label, .button {
+  margin-top: 15px;
+}
+
+.userbox, .userbox1, .userbox2 {
+  padding: 0px 20px 0px 20px;
+}
+
+.userbox > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.userbox1 {
+  display: flex;
+  justify-content: center;
+}
 /*Body Section*/
 
 /*Title Section*/
