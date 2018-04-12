@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /*Styling rules for header section*/
 .header {
@@ -33,6 +34,7 @@ body {
   background-image: url(docs/images/Background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: calc(100% - 120px);
 }
 /*Home Section End*/
 
@@ -82,7 +84,6 @@ body {
 #resimg {
   width: 500px;
 }
-
 /*Show more button settings*/
 .read-more-state {
   display: none;
@@ -170,14 +171,15 @@ body {
 footer {
   background-color: #C1D6E0;
   margin-left: auto;
-  width: 19.5em;
+  width: 350px;
+  height: 120px;
   margin-right: auto;
   font-family: "Nunito", sans-serif;
 }
 
 footer p{
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -191,6 +193,19 @@ footer a:hover{
 a {
   color:inherit;
   text-decoration: none;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+label {
+  font-family: "Oxygen", sans-serif;
+}
+
+figcaption {
+  text-align: center;
 }
 /*Tags Section End*/
 
