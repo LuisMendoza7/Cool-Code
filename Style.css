@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /*Styling rules for header section*/
 .header {
@@ -11,8 +12,16 @@
   font-family: "Nunito", sans-serif;
 }
 
-.HI:hover, .HF:hover {
+.HI {
+  padding: 12px
+}
+
+.HI:hover {
   background-color: #B3B3FF;
+}
+
+.headeritems {
+  margin-left: auto;
 }
 /*Header Section End*/
 
@@ -25,8 +34,8 @@ body {
   background-image: url(docs/images/Background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: calc(100% - 120px);
 }
-
 /*Home Section End*/
 
 /*Body Section(Used in all user pages)*/
@@ -46,7 +55,21 @@ body {
 }
 
 .resbox {
+  margin-top: 15px;
   padding: 30px;
+}
+
+.faq {
+  text-align: center;
+}
+
+.resbox > h3 {
+  margin-top: 40px;
+}
+
+.resbox p {
+  width: 70%;
+  line-height: 1.8;
 }
 
 .curses {
@@ -63,6 +86,35 @@ body {
 .cursetitle {
   font-family: "Oxygen", sans-serif;
   text-align: center;
+}
+
+#resimg {
+  width: 500px;
+}
+
+.userbox {
+  padding: 30px;
+}
+
+.boxborder{
+  border: 1px gray;
+  border-style: groove;
+}
+
+.boxmargin {
+  margin-top: 25px;
+}
+
+.usermod > input, label {
+  margin-left: auto;
+  margin-right: auto;
+}
+.usermod > label, .button, #fileimg {
+  margin-top: 25px;
+}
+
+.hidden {
+  display: none;
 }
 
 /*Show more button settings*/
@@ -150,16 +202,16 @@ body {
 
 /*Footer Section Styling*/
 footer {
-  background-color: #C1D6E0;
   margin-left: auto;
-  width: 35%;
+  width: 350px;
+  height: 120px;
   margin-right: auto;
   font-family: "Nunito", sans-serif;
 }
 
 footer p{
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -174,10 +226,43 @@ a {
   color:inherit;
   text-decoration: none;
 }
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+
+}
+
+label {
+  font-family: "Oxygen", sans-serif;
+}
+
+figcaption {
+  text-align: center;
+}
+
+hr {
+  margin-top: 50px;
+  width: 700px;
+}
 /*Tags Section End*/
 
 /*Responsive Section*/
-@media only screen and (max-width:1120px){
+@media only screen and (max-width: 1200px) {
+  .boxborder{
+    border: 0px;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  hr {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width:1024px){
   .log {
     margin: 0px;
     margin-bottom: 3rem;
@@ -193,11 +278,54 @@ a {
   .title {
     width: 65%;
   }
+
+  .ad {
+    width: 70%;
+    text-align: center;
+    padding-top: 25px;
+  }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 720px) {
   .title {
     width: 75%;
+  }
+
+  .ad {
+    width: 80%;
+  }
+
+  #resimg {
+    width: 400px;
+  }
+
+  .resbox p {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .headeritems > .HI {
+    line-height: 3;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .ad {
+    font-size: 1.7em;
+    width: 95%;
+  }
+
+  .cursebox {
+    margin-bottom: 2em;
+  }
+
+  #resimg {
+    width: 80%;
+  }
+
+  .resbox p {
+    width: 80%;
   }
 }
 /*Responsive Section End*/
