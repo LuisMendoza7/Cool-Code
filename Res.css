@@ -1,0 +1,169 @@
+/*Flexbox CSS and responsive rules*/
+/*Header Section*/
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+/*Header Section End*/
+
+/*Home Section(Used only in Index.html)*/
+body {
+  margin: 0px;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/*Home Section End*/
+
+/*Body Section*/
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.resbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+.ad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.curses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.curses > .cursebox {
+  margin:  20px;
+}
+
+.usermain {
+  display: flex;
+  flex-direction: row;
+  margin: 3% 6% 3% 6%;
+  border: 3px double gray;
+  padding: 20px 0 20px 0;
+  justify-content: space-around;
+  box-shadow: 9px 6px 23px 3px rgba(0,0,0,0.75);
+
+}
+
+.usermod {
+  display: flex;
+  flex-direction: column;
+}
+
+.usermain1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.userbox > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.userbox1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.userbox1 > figure {
+  margin: 0px;
+}
+
+.curseimg {
+  display: inline-block;
+  height: 15vw;
+}
+
+.imgbox {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Body Section*/
+
+/*Title Section*/
+.title {
+  display: flex;
+  align-items: center;
+}
+/*Title Section End*/
+
+/*Footer Section*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.f1, .f2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+}
+/*Footer Section End*/
+
+/*Responsive Section*/
+@media only screen and (max-width: 1200px) {
+  .usermain {
+    flex-direction: column;
+  }
+
+  .usermain1 {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .userinput {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .imgfoot {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .headeritems > .HI {
+    line-height: 3;
+  }
+
+  .imgfoot {
+    font-size: 12px;
+  }
+}
+/*Responsive Section End*/
