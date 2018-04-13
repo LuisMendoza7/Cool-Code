@@ -59,10 +59,9 @@ body {
   margin: 3% 6% 3% 6%;
   border: 3px double gray;
   padding: 20px 0 20px 0;
-}
+  justify-content: space-around;
+  box-shadow: 9px 6px 23px 3px rgba(0,0,0,0.75);
 
-.usermain1 {
-  padding: 0 20px 0 20px;
 }
 
 .usermod {
@@ -70,12 +69,10 @@ body {
   flex-direction: column;
 }
 
-.usermod > label, .button {
-  margin-top: 15px;
-}
-
-.userbox, .userbox1, .userbox2 {
-  padding: 0px 20px 0px 20px;
+.usermain1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
 }
 
 .userbox > img {
@@ -87,8 +84,23 @@ body {
 
 .userbox1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
+
+.userbox1 > figure {
+  margin: 0px;
+}
+
+.curseimg {
+  display: inline-block;
+  height: 15vw;
+}
+
+.imgbox {
+  display: flex;
+  flex-direction: column;
+}
+
 /*Body Section*/
 
 /*Title Section*/
@@ -115,6 +127,21 @@ body {
 /*Footer Section End*/
 
 /*Responsive Section*/
+@media only screen and (max-width: 1200px) {
+  .usermain {
+    flex-direction: column;
+  }
+
+  .usermain1 {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .userinput {
+    width: 40vw;
+  }
+}
+
 @media only screen and (max-width: 1120px) {
   .home {
     display: flex;
@@ -123,11 +150,20 @@ body {
     align-items: center;
     align-content: center;
   }
+
+  .imgfoot {
+    font-size: 15px;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   .headeritems > .HI {
     line-height: 3;
+  }
+
+  .imgfoot {
+    font-size: 12px;
   }
 }
 /*Responsive Section End*/

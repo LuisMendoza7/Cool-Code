@@ -59,8 +59,15 @@ body {
   padding: 30px;
 }
 
-.resbox p {
+.faq {
+  text-align: center;
+}
+
+.resbox > h3 {
   margin-top: 40px;
+}
+
+.resbox p {
   width: 70%;
   line-height: 1.8;
 }
@@ -84,6 +91,32 @@ body {
 #resimg {
   width: 500px;
 }
+
+.userbox {
+  padding: 30px;
+}
+
+.boxborder{
+  border: 1px gray;
+  border-style: groove;
+}
+
+.boxmargin {
+  margin-top: 25px;
+}
+
+.usermod > input, label {
+  margin-left: auto;
+  margin-right: auto;
+}
+.usermod > label, .button, #fileimg {
+  margin-top: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
 /*Show more button settings*/
 .read-more-state {
   display: none;
@@ -169,7 +202,6 @@ body {
 
 /*Footer Section Styling*/
 footer {
-  background-color: #C1D6E0;
   margin-left: auto;
   width: 350px;
   height: 120px;
@@ -198,6 +230,7 @@ a {
 h3 {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+
 }
 
 label {
@@ -207,9 +240,28 @@ label {
 figcaption {
   text-align: center;
 }
+
+hr {
+  margin-top: 50px;
+  width: 700px;
+}
 /*Tags Section End*/
 
 /*Responsive Section*/
+@media only screen and (max-width: 1200px) {
+  .boxborder{
+    border: 0px;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  hr {
+    width: 70%;
+  }
+}
+
 @media only screen and (max-width:1024px){
   .log {
     margin: 0px;
