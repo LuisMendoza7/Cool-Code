@@ -34,7 +34,7 @@ body {
   background-image: url(docs/images/Background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100% - 120px);
+  height: calc(100% - 167px);
 }
 /*Home Section End*/
 
@@ -197,16 +197,19 @@ body {
 .button:hover{
   background-color: #4CAF50;
   color: white;
+  cursor: pointer;
 }
 /*Login Section End*/
 
 /*Footer Section Styling*/
 footer {
   margin-left: auto;
-  width: 350px;
+  width: 100%;
+  /* width: 350px; */
   height: 120px;
   margin-right: auto;
   font-family: "Nunito", sans-serif;
+  background: #AF53FF;
 }
 
 footer p{
